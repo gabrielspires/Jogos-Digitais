@@ -12,7 +12,7 @@
     "macExecutableFilename": "",
     "orientation": "landscape",
     "packageName": "com.example.gamename",
-    "projectFile": "D:\\Git\\Jogos-Digitais\\TP0\\game.json",
+    "projectFile": "/home/kastor/Área de Trabalho/Git/Jogos-Digitais/TP0/game.json",
     "sizeOnStartupMode": "adaptWidth",
     "useExternalSourceFiles": false,
     "version": "0.0.1",
@@ -281,7 +281,7 @@
           "variables": [],
           "behaviors": [
             {
-              "acceleration": 600,
+              "acceleration": 350,
               "allowDiagonals": true,
               "angleOffset": 0,
               "angularMaxSpeed": 180,
@@ -295,7 +295,7 @@
           ],
           "animations": [
             {
-              "name": "",
+              "name": "Player",
               "useMultipleDirections": false,
               "directions": [
                 {
@@ -364,7 +364,31 @@
           ]
         }
       ],
-      "events": [],
+      "events": [
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "RotateTowardPosition"
+              },
+              "parameters": [
+                "Player",
+                "MouseX()",
+                "MouseY()",
+                "0",
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        }
+      ],
       "layers": [
         {
           "name": "",
