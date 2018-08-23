@@ -339,7 +339,12 @@
           "name": "Player",
           "type": "Sprite",
           "updateIfNotVisible": false,
-          "variables": [],
+          "variables": [
+            {
+              "name": "speed",
+              "value": ""
+            }
+          ],
           "behaviors": [
             {
               "angularDamping": 0.1,
@@ -825,6 +830,28 @@
             {
               "type": {
                 "inverted": false,
+                "value": "ModVarObjet"
+              },
+              "parameters": [
+                "Player",
+                "speed",
+                "=",
+                "0.12"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
                 "value": "PhysicsBehavior::SetGravity"
               },
               "parameters": [
@@ -866,7 +893,7 @@
                 "Player",
                 "Physics",
                 "0",
-                "-0.2",
+                "-Player.Variable(speed)",
                 ""
               ],
               "subInstructions": []
@@ -900,7 +927,7 @@
               "parameters": [
                 "Player",
                 "Physics",
-                "-0.2",
+                "-Player.Variable(speed)",
                 "0",
                 ""
               ],
@@ -936,7 +963,7 @@
                 "Player",
                 "Physics",
                 "0",
-                "0.2",
+                "Player.Variable(speed)",
                 ""
               ],
               "subInstructions": []
@@ -970,7 +997,7 @@
               "parameters": [
                 "Player",
                 "Physics",
-                "0.2",
+                "Player.Variable(speed)",
                 "0",
                 ""
               ],
