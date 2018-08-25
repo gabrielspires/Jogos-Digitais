@@ -233,6 +233,12 @@
         "name": "HealthBar-1.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "file": "snd/Mattashi_Lost_in_Pixels.mp3",
+        "kind": "audio",
+        "name": "Mattashi_Lost_in_Pixels.mp3",
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -298,8 +304,8 @@
           "locked": false,
           "name": "Player",
           "width": 0,
-          "x": 471,
-          "y": 314,
+          "x": 640,
+          "y": 360,
           "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
@@ -313,7 +319,7 @@
           "locked": false,
           "name": "GameOver_TXT",
           "width": 0,
-          "x": 541,
+          "x": 482,
           "y": 182,
           "zOrder": 7,
           "numberProperties": [],
@@ -343,9 +349,24 @@
           "locked": false,
           "name": "HealthBar",
           "width": 0,
-          "x": 155.949,
-          "y": 60.8873,
+          "x": 55,
+          "y": 50,
           "zOrder": 16,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "Health_TXT",
+          "width": 0,
+          "x": 16,
+          "y": 48,
+          "zOrder": 18,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -1012,9 +1033,9 @@
           "underlined": false,
           "variables": [],
           "behaviors": [],
-          "string": "Game Over",
+          "string": "GAME OVER",
           "font": "",
-          "characterSize": 40,
+          "characterSize": 50,
           "color": {
             "b": 0,
             "g": 0,
@@ -1030,7 +1051,7 @@
           "underlined": false,
           "variables": [],
           "behaviors": [],
-          "string": "",
+          "string": "HP:",
           "font": "",
           "characterSize": 20,
           "color": {
@@ -1120,12 +1141,14 @@
             {
               "type": {
                 "inverted": false,
-                "value": "TextObject::String"
+                "value": "PlayMusic"
               },
               "parameters": [
-                "Health_TXT",
-                "=",
-                "Player.VariableString(health)"
+                "",
+                "Mattashi_Lost_in_Pixels.mp3",
+                "yes",
+                "",
+                ""
               ],
               "subInstructions": []
             }
@@ -1213,18 +1236,6 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "TextObject::String"
-                  },
-                  "parameters": [
-                    "Health_TXT",
-                    "=",
-                    "ToString(int(Player.Variable(health)))"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
                     "value": "ResetTimer"
                   },
                   "parameters": [
@@ -1259,9 +1270,10 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "Quit"
+                    "value": "Montre"
                   },
                   "parameters": [
+                    "GameOver_TXT",
                     ""
                   ],
                   "subInstructions": []
@@ -1269,10 +1281,9 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "Montre"
+                    "value": "Quit"
                   },
                   "parameters": [
-                    "GameOver_TXT",
                     ""
                   ],
                   "subInstructions": []
@@ -1299,6 +1310,14 @@
                   "subInstructions": []
                 }
               ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [],
               "events": []
             }
           ]
