@@ -239,6 +239,20 @@
         "kind": "audio",
         "name": "Mattashi_Lost_in_Pixels.mp3",
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "img/background.png",
+        "kind": "image",
+        "name": "background.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "snd/explosion.mp3",
+        "kind": "audio",
+        "name": "explosion.mp3",
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -367,6 +381,21 @@
           "x": 16,
           "y": 48,
           "zOrder": 18,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 1084.42,
+          "layer": "BackgroundLayer",
+          "locked": false,
+          "name": "Background",
+          "width": 1818.77,
+          "x": -252,
+          "y": -170,
+          "zOrder": 0,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -1066,6 +1095,15 @@
           "texture": "HealthBar-1.png",
           "type": "TiledSpriteObject::TiledSprite",
           "width": 500,
+          "variables": [],
+          "behaviors": []
+        },
+        {
+          "height": 140,
+          "name": "Background",
+          "texture": "background.png",
+          "type": "TiledSpriteObject::TiledSprite",
+          "width": 80,
           "variables": [],
           "behaviors": []
         }
@@ -1820,6 +1858,20 @@
                 ""
               ],
               "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "explosion.mp3",
+                "",
+                "50",
+                "1.2"
+              ],
+              "subInstructions": []
             }
           ],
           "events": []
@@ -1897,7 +1949,7 @@
                     "Enemy",
                     "50+Random(1180)",
                     "50+Random(620)",
-                    ""
+                    "\"\""
                   ],
                   "subInstructions": []
                 },
@@ -1950,6 +2002,12 @@
         }
       ],
       "layers": [
+        {
+          "name": "BackgroundLayer",
+          "visibility": true,
+          "cameras": [],
+          "effects": []
+        },
         {
           "name": "",
           "visibility": true,
