@@ -253,6 +253,30 @@
         "kind": "audio",
         "name": "explosion.mp3",
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "img/background_small.png",
+        "kind": "image",
+        "name": "background_small.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "img/PlayerBullet_02.png",
+        "kind": "image",
+        "name": "PlayerBullet_02.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "img/PlayerBullet-1.png",
+        "kind": "image",
+        "name": "PlayerBullet-1.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -266,6 +290,140 @@
     }
   ],
   "layouts": [
+    {
+      "b": 0,
+      "disableInputWhenNotFocused": true,
+      "mangledName": "GameMenu",
+      "name": "GameMenu",
+      "oglFOV": 90,
+      "oglZFar": 500,
+      "oglZNear": 1,
+      "r": 0,
+      "standardSortMethod": true,
+      "stopSoundsOnStartup": true,
+      "title": "",
+      "v": 0,
+      "uiSettings": {
+        "grid": false,
+        "gridB": 255,
+        "gridG": 180,
+        "gridHeight": 32,
+        "gridOffsetX": 0,
+        "gridOffsetY": 0,
+        "gridR": 158,
+        "gridWidth": 32,
+        "snap": true,
+        "windowMask": false,
+        "zoomFactor": 1
+      },
+      "objectsGroups": [],
+      "variables": [],
+      "instances": [
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "Play_TXT",
+          "width": 0,
+          "x": 640,
+          "y": 311,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        }
+      ],
+      "objects": [
+        {
+          "bold": true,
+          "italic": false,
+          "name": "Play_TXT",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [],
+          "string": "Play!",
+          "font": "",
+          "characterSize": 40,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          }
+        }
+      ],
+      "events": [
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "SourisSurObjet"
+              },
+              "parameters": [
+                "Play_TXT",
+                "",
+                "",
+                ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "SourisBouton"
+              },
+              "parameters": [
+                "",
+                "Left"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"GameScene\"",
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        }
+      ],
+      "layers": [
+        {
+          "name": "",
+          "visibility": true,
+          "cameras": [
+            {
+              "defaultSize": true,
+              "defaultViewport": true,
+              "height": 0,
+              "viewportBottom": 1,
+              "viewportLeft": 0,
+              "viewportRight": 1,
+              "viewportTop": 0,
+              "width": 0
+            }
+          ],
+          "effects": []
+        }
+      ],
+      "behaviorsSharedData": []
+    },
     {
       "b": 0,
       "disableInputWhenNotFocused": true,
@@ -293,7 +451,40 @@
         "zoomFactor": 1
       },
       "objectsGroups": [],
-      "variables": [],
+      "variables": [
+        {
+          "name": "rand_x1",
+          "value": ""
+        },
+        {
+          "name": "rand_x2",
+          "value": ""
+        },
+        {
+          "name": "rand_x3",
+          "value": ""
+        },
+        {
+          "name": "rand_x4",
+          "value": ""
+        },
+        {
+          "name": "rand_y1",
+          "children": []
+        },
+        {
+          "name": "rand_y2",
+          "value": ""
+        },
+        {
+          "name": "rand_y3",
+          "value": ""
+        },
+        {
+          "name": "rand_y4",
+          "value": ""
+        }
+      ],
       "instances": [
         {
           "angle": 0,
@@ -393,9 +584,84 @@
           "locked": false,
           "name": "Background",
           "width": 1818.77,
-          "x": -252,
-          "y": -170,
+          "x": -251,
+          "y": -178,
           "zOrder": 0,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "GameTime",
+          "width": 0,
+          "x": 659.472,
+          "y": -122.933,
+          "zOrder": 19,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 774,
+          "layer": "",
+          "locked": false,
+          "name": "Walls",
+          "width": 32,
+          "x": -18,
+          "y": -29,
+          "zOrder": 20,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 774,
+          "layer": "",
+          "locked": false,
+          "name": "Walls",
+          "width": 32,
+          "x": 1365,
+          "y": -30,
+          "zOrder": 20,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 32,
+          "layer": "",
+          "locked": false,
+          "name": "Walls",
+          "width": 1422,
+          "x": -25,
+          "y": 708,
+          "zOrder": 21,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 32,
+          "layer": "",
+          "locked": false,
+          "name": "Walls",
+          "width": 1422,
+          "x": -27,
+          "y": -20,
+          "zOrder": 21,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -476,7 +742,7 @@
           "behaviors": [],
           "animations": [
             {
-              "name": "NewObject",
+              "name": "PlayerBullet",
               "useMultipleDirections": false,
               "directions": [
                 {
@@ -484,13 +750,13 @@
                   "timeBetweenFrames": 1,
                   "sprites": [
                     {
-                      "hasCustomCollisionMask": true,
-                      "image": "PlayerBullet.png",
+                      "hasCustomCollisionMask": false,
+                      "image": "PlayerBullet-1.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
                         "x": 0,
-                        "y": 6
+                        "y": 0
                       },
                       "centerPoint": {
                         "automatic": true,
@@ -498,26 +764,7 @@
                         "x": 0,
                         "y": 0
                       },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 0,
-                            "y": 2
-                          },
-                          {
-                            "x": 11,
-                            "y": 2
-                          },
-                          {
-                            "x": 11,
-                            "y": 9
-                          },
-                          {
-                            "x": 0,
-                            "y": 9
-                          }
-                        ]
-                      ]
+                      "customCollisionMask": []
                     }
                   ]
                 }
@@ -565,8 +812,8 @@
                       "points": [],
                       "originPoint": {
                         "name": "origine",
-                        "x": 0,
-                        "y": 0
+                        "x": 16,
+                        "y": 16
                       },
                       "centerPoint": {
                         "automatic": true,
@@ -629,8 +876,8 @@
                       "points": [],
                       "originPoint": {
                         "name": "origine",
-                        "x": 0,
-                        "y": 0
+                        "x": 16,
+                        "y": 16
                       },
                       "centerPoint": {
                         "automatic": true,
@@ -681,8 +928,8 @@
                       "points": [],
                       "originPoint": {
                         "name": "origine",
-                        "x": 0,
-                        "y": 0
+                        "x": 16,
+                        "y": 16
                       },
                       "centerPoint": {
                         "automatic": true,
@@ -733,8 +980,8 @@
                       "points": [],
                       "originPoint": {
                         "name": "origine",
-                        "x": 0,
-                        "y": 0
+                        "x": 16,
+                        "y": 16
                       },
                       "centerPoint": {
                         "automatic": true,
@@ -785,8 +1032,8 @@
                       "points": [],
                       "originPoint": {
                         "name": "origine",
-                        "x": 0,
-                        "y": 0
+                        "x": 16,
+                        "y": 16
                       },
                       "centerPoint": {
                         "automatic": true,
@@ -837,8 +1084,8 @@
                       "points": [],
                       "originPoint": {
                         "name": "origine",
-                        "x": 0,
-                        "y": 0
+                        "x": 16,
+                        "y": 16
                       },
                       "centerPoint": {
                         "automatic": true,
@@ -889,8 +1136,8 @@
                       "points": [],
                       "originPoint": {
                         "name": "origine",
-                        "x": 0,
-                        "y": 0
+                        "x": 16,
+                        "y": 16
                       },
                       "centerPoint": {
                         "automatic": true,
@@ -940,6 +1187,67 @@
               ]
             }
           ]
+        },
+        {
+          "additive": false,
+          "alphaParam": "Mutable",
+          "angleParam": "Mutable",
+          "blueParam": "Random",
+          "destroyWhenNoParticles": true,
+          "emissionEditionSimpleMode": true,
+          "emitterAngleA": 0,
+          "emitterAngleB": 0,
+          "emitterForceMax": 0,
+          "emitterForceMin": 0,
+          "emitterXDirection": 0,
+          "emitterYDirection": 1,
+          "emitterZDirection": 0,
+          "flow": 1,
+          "friction": 0,
+          "gravityEditionSimpleMode": true,
+          "greenParam": "Random",
+          "maxParticleNb": 1,
+          "name": "EnemySpawn",
+          "particleAlpha1": 255,
+          "particleAlpha2": 80,
+          "particleAlphaRandomness1": 0,
+          "particleAlphaRandomness2": 0,
+          "particleAngle1": 0,
+          "particleAngle2": 0,
+          "particleAngleRandomness1": 0,
+          "particleAngleRandomness2": 0,
+          "particleBlue1": 51,
+          "particleBlue2": 0,
+          "particleEditionSimpleMode": true,
+          "particleGravityX": 0,
+          "particleGravityY": 0,
+          "particleGravityZ": 0,
+          "particleGreen1": 51,
+          "particleGreen2": 0,
+          "particleLifeTimeMax": 2,
+          "particleLifeTimeMin": 2,
+          "particleRed1": 255,
+          "particleRed2": 128,
+          "particleSize1": 180,
+          "particleSize2": 0,
+          "particleSizeRandomness1": 0,
+          "particleSizeRandomness2": 0,
+          "redParam": "Enabled",
+          "rendererParam1": 10,
+          "rendererParam2": 1,
+          "rendererType": "Point",
+          "sizeParam": "Mutable",
+          "tank": 2,
+          "textureParticleName": "",
+          "type": "ParticleSystem::ParticleEmitter",
+          "zoneRadius": 0,
+          "variables": [
+            {
+              "name": "spaoTiumes",
+              "children": []
+            }
+          ],
+          "behaviors": []
         },
         {
           "additive": false,
@@ -1090,6 +1398,24 @@
           }
         },
         {
+          "bold": false,
+          "italic": false,
+          "name": "GameTime_TXT",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [],
+          "string": "00:00",
+          "font": "",
+          "characterSize": 40,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          }
+        },
+        {
           "height": 20,
           "name": "HealthBar",
           "texture": "HealthBar-1.png",
@@ -1106,6 +1432,34 @@
           "width": 80,
           "variables": [],
           "behaviors": []
+        },
+        {
+          "height": 32,
+          "name": "Walls",
+          "texture": "HealthBar-1.png",
+          "type": "TiledSpriteObject::TiledSprite",
+          "width": 32,
+          "variables": [],
+          "behaviors": [
+            {
+              "angularDamping": 0.1,
+              "autoResizing": false,
+              "averageFriction": 0.8,
+              "averageRestitution": 0,
+              "coordsList": "",
+              "dynamic": false,
+              "fixedRotation": false,
+              "isBullet": false,
+              "linearDamping": 0.1,
+              "massDensity": 1,
+              "name": "Physics",
+              "polygonHeight": 200,
+              "polygonWidth": 200,
+              "positioning": "OnCenter",
+              "shapeType": "Box",
+              "type": "PhysicsBehavior::PhysicsBehavior"
+            }
+          ]
         }
       ],
       "events": [
@@ -1185,8 +1539,19 @@
                 "",
                 "Mattashi_Lost_in_Pixels.mp3",
                 "yes",
-                "",
+                "30",
                 ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ResetTimer"
+              },
+              "parameters": [
+                "",
+                "\"GameTimer\""
               ],
               "subInstructions": []
             }
@@ -1348,14 +1713,6 @@
                   "subInstructions": []
                 }
               ],
-              "events": []
-            },
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [],
-              "actions": [],
               "events": []
             }
           ]
@@ -1663,7 +2020,7 @@
               },
               "parameters": [
                 "",
-                "0.10",
+                "0.2",
                 "\"ShootingInterval\""
               ],
               "subInstructions": []
@@ -1707,6 +2064,90 @@
                 "PlayerBullet",
                 "MouseX(\"\",0)",
                 "MouseY(\"\",0)",
+                "1000",
+                "1"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "PlayerBullet",
+                "Player.X()",
+                "Player.Y()",
+                "\"\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "RotateTowardPosition"
+              },
+              "parameters": [
+                "PlayerBullet",
+                "MouseX(\"\",0)",
+                "MouseY(\"\",0)",
+                "",
+                ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "AddForceVersPos"
+              },
+              "parameters": [
+                "PlayerBullet",
+                "Random(80)+MouseX()",
+                "Random(80)+MouseY()",
+                "1000",
+                "1"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "PlayerBullet",
+                "Player.X()",
+                "Player.Y()",
+                "\"\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "RotateTowardPosition"
+              },
+              "parameters": [
+                "PlayerBullet",
+                "MouseX(\"\",0)",
+                "MouseY(\"\",0)",
+                "",
+                ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "AddForceVersPos"
+              },
+              "parameters": [
+                "PlayerBullet",
+                "-Random(80)+MouseX()",
+                "-Random(80)+MouseY()",
                 "1000",
                 "1"
               ],
@@ -1868,7 +2309,7 @@
                 "",
                 "explosion.mp3",
                 "",
-                "50",
+                "10",
                 "1.2"
               ],
               "subInstructions": []
@@ -1937,7 +2378,20 @@
               "disabled": false,
               "folded": false,
               "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [],
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Timer"
+                  },
+                  "parameters": [
+                    "",
+                    "2",
+                    "\"SpawnDelay\""
+                  ],
+                  "subInstructions": []
+                }
+              ],
               "actions": [
                 {
                   "type": {
@@ -1947,23 +2401,42 @@
                   "parameters": [
                     "",
                     "Enemy",
-                    "50+Random(1180)",
-                    "50+Random(620)",
+                    "Variable(rand_x1)",
+                    "Variable(rand_y1)",
                     "\"\""
                   ],
                   "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarScene"
+                  },
+                  "parameters": [
+                    "rand_x1",
+                    "=",
+                    "50+Random(1180)"
+                  ],
+                  "subInstructions": []
                 },
                 {
                   "type": {
                     "inverted": false,
-                    "value": "Create"
+                    "value": "ModVarScene"
                   },
                   "parameters": [
-                    "",
-                    "Enemy",
-                    "50+Random(1180)",
-                    "50+Random(620)",
-                    ""
+                    "rand_y1",
+                    "=",
+                    "50+Random(620)"
                   ],
                   "subInstructions": []
                 },
@@ -1974,10 +2447,79 @@
                   },
                   "parameters": [
                     "",
-                    "Enemy",
-                    "50+Random(1180)",
-                    "50+Random(620)",
+                    "EnemySpawn",
+                    "Variable(rand_x1)",
+                    "Variable(rand_y1)",
                     ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Timer"
+                  },
+                  "parameters": [
+                    "",
+                    "2",
+                    "\"SpawnDelay\""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "Enemy",
+                    "Variable(rand_x2)",
+                    "Variable(rand_y2)",
+                    "\"\""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarScene"
+                  },
+                  "parameters": [
+                    "rand_x2",
+                    "=",
+                    "50+Random(1180)"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarScene"
+                  },
+                  "parameters": [
+                    "rand_y2",
+                    "=",
+                    "50+Random(620)"
                   ],
                   "subInstructions": []
                 },
@@ -1988,10 +2530,187 @@
                   },
                   "parameters": [
                     "",
-                    "Enemy",
-                    "50+Random(1180)",
-                    "50+Random(620)",
+                    "EnemySpawn",
+                    "Variable(rand_x2)",
+                    "Variable(rand_y2)",
                     ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Timer"
+                  },
+                  "parameters": [
+                    "",
+                    "2",
+                    "\"SpawnDelay\""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "Enemy",
+                    "Variable(rand_x3)",
+                    "Variable(rand_y3)",
+                    "\"\""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarScene"
+                  },
+                  "parameters": [
+                    "rand_x3",
+                    "=",
+                    "50+Random(1180)"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarScene"
+                  },
+                  "parameters": [
+                    "rand_y3",
+                    "=",
+                    "50+Random(620)"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "EnemySpawn",
+                    "Variable(rand_x3)",
+                    "Variable(rand_y3)",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Timer"
+                  },
+                  "parameters": [
+                    "",
+                    "2",
+                    "\"SpawnDelay\""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "Enemy",
+                    "Variable(rand_x4)",
+                    "Variable(rand_y4)",
+                    "\"\""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarScene"
+                  },
+                  "parameters": [
+                    "rand_x4",
+                    "=",
+                    "50+Random(1180)"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarScene"
+                  },
+                  "parameters": [
+                    "rand_y4",
+                    "=",
+                    "50+Random(620)"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "EnemySpawn",
+                    "Variable(rand_x4)",
+                    "Variable(rand_y4)",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ResetTimer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"SpawnDelay\""
                   ],
                   "subInstructions": []
                 }
@@ -1999,6 +2718,107 @@
               "events": []
             }
           ]
+        },
+        {
+          "disabled": true,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "EnemySpawn",
+                "50+Random(1180)",
+                "50+Random(620)",
+                ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "Enemy",
+                "EnemySpawn.X()",
+                "EnemySpawn.Y()",
+                "\"\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "EnemySpawn",
+                "50+Random(1180)",
+                "50+Random(620)",
+                ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "Enemy",
+                "EnemySpawn.X()",
+                "EnemySpawn.Y()",
+                "\"\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "EnemySpawn",
+                "50+Random(1180)",
+                "50+Random(620)",
+                ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "Enemy",
+                "EnemySpawn.X()",
+                "EnemySpawn.Y()",
+                "\"\""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [],
+          "events": []
         }
       ],
       "layers": [
