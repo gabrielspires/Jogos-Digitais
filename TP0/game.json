@@ -618,7 +618,7 @@
           "locked": false,
           "name": "GameOver_TXT",
           "width": 0,
-          "x": 482,
+          "x": 368,
           "y": 182,
           "zOrder": 7,
           "numberProperties": [],
@@ -3137,6 +3137,54 @@
                 "\"Enemy Spawning\""
               ],
               "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "x_lower_limit",
+                "=",
+                "-500"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "x_upper_limit",
+                "=",
+                "2000"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "y_lower_limit",
+                "=",
+                "-350"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "y_upper_limit",
+                "=",
+                "1300"
+              ],
+              "subInstructions": []
             }
           ],
           "events": [
@@ -3190,7 +3238,7 @@
                   "parameters": [
                     "rand_x1",
                     "=",
-                    "50+Random(1180)"
+                    "Variable(x_lower_limit)+Random(Variable(x_upper_limit))"
                   ],
                   "subInstructions": []
                 },
@@ -3202,7 +3250,7 @@
                   "parameters": [
                     "rand_y1",
                     "=",
-                    "50+Random(620)"
+                    "Variable(y_lower_limit)+Random(Variable(y_upper_limit))"
                   ],
                   "subInstructions": []
                 },
@@ -3273,7 +3321,7 @@
                   "parameters": [
                     "rand_x2",
                     "=",
-                    "50+Random(1180)"
+                    "Variable(x_lower_limit)+Random(Variable(x_upper_limit))"
                   ],
                   "subInstructions": []
                 },
@@ -3285,7 +3333,7 @@
                   "parameters": [
                     "rand_y2",
                     "=",
-                    "50+Random(620)"
+                    "Variable(y_lower_limit)+Random(Variable(y_upper_limit))"
                   ],
                   "subInstructions": []
                 },
@@ -3376,7 +3424,7 @@
                       "parameters": [
                         "rand_x3",
                         "=",
-                        "50+Random(1180)"
+                        "Variable(x_lower_limit)+Random(Variable(x_upper_limit))"
                       ],
                       "subInstructions": []
                     },
@@ -3388,7 +3436,7 @@
                       "parameters": [
                         "rand_y3",
                         "=",
-                        "50+Random(620)"
+                        "Variable(y_lower_limit)+Random(Variable(y_upper_limit))"
                       ],
                       "subInstructions": []
                     },
@@ -3481,7 +3529,7 @@
                       "parameters": [
                         "rand_x4",
                         "=",
-                        "50+Random(1180)"
+                        "Variable(x_lower_limit)+Random(Variable(x_upper_limit))"
                       ],
                       "subInstructions": []
                     },
@@ -3493,7 +3541,7 @@
                       "parameters": [
                         "rand_y4",
                         "=",
-                        "50+Random(620)"
+                        "Variable(y_lower_limit)+Random(Variable(y_upper_limit))"
                       ],
                       "subInstructions": []
                     },
@@ -3586,7 +3634,7 @@
                       "parameters": [
                         "rand_x5",
                         "=",
-                        "50+Random(1180)"
+                        "Variable(x_lower_limit)+Random(Variable(x_upper_limit))"
                       ],
                       "subInstructions": []
                     },
@@ -3598,7 +3646,7 @@
                       "parameters": [
                         "rand_y5",
                         "=",
-                        "50+Random(620)"
+                        "Variable(y_lower_limit)+Random(Variable(y_upper_limit))"
                       ],
                       "subInstructions": []
                     },
@@ -3691,7 +3739,7 @@
                       "parameters": [
                         "rand_x6",
                         "=",
-                        "50+Random(1180)"
+                        "Variable(x_lower_limit)+Random(Variable(x_upper_limit))"
                       ],
                       "subInstructions": []
                     },
@@ -3703,7 +3751,7 @@
                       "parameters": [
                         "rand_y6",
                         "=",
-                        "50+Random(620)"
+                        "Variable(y_lower_limit)+Random(Variable(y_upper_limit))"
                       ],
                       "subInstructions": []
                     },
