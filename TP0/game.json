@@ -22,7 +22,7 @@
     "author": "Gabriel H. S. Pires",
     "windowWidth": 1280,
     "windowHeight": 720,
-    "latestCompilationDirectory": "D:\\Git\\Jogos-Digitais\\TP0\\docs",
+    "latestCompilationDirectory": "D:\\Git\\Jogos-Digitais\\docs",
     "maxFPS": 60,
     "minFPS": 10,
     "verticalSync": false,
@@ -318,6 +318,44 @@
         "file": "snd/gameOver.ogg",
         "kind": "audio",
         "name": "gameOver.ogg",
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "img/background_00.jpg",
+        "kind": "image",
+        "name": "background_00.jpg",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "img/Player_red.png",
+        "kind": "image",
+        "name": "Player_red.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "img/HealthBar-frame.png",
+        "kind": "image",
+        "name": "HealthBar-frame.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "img/HealthBar-bg.png",
+        "kind": "image",
+        "name": "HealthBar-bg.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "snd/shot.wav",
+        "kind": "audio",
+        "name": "shot.wav",
         "userAdded": true
       }
     ],
@@ -813,9 +851,39 @@
           "locked": false,
           "name": "bg_1",
           "width": 0,
-          "x": -1364,
-          "y": -748,
+          "x": -752,
+          "y": -478,
           "zOrder": -10,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "HUD",
+          "locked": false,
+          "name": "Healthbar_frame",
+          "width": 0,
+          "x": 55,
+          "y": 50,
+          "zOrder": 17,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "HUD",
+          "locked": false,
+          "name": "Healthbar_bg",
+          "width": 0,
+          "x": 55,
+          "y": 50,
+          "zOrder": 15,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -867,12 +935,12 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "player_32.png",
+                      "image": "Player_red.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
-                        "x": 16,
-                        "y": 16
+                        "x": 20,
+                        "y": 20
                       },
                       "centerPoint": {
                         "automatic": true,
@@ -1439,8 +1507,8 @@
           "particleGravityZ": 0,
           "particleGreen1": 51,
           "particleGreen2": 0,
-          "particleLifeTimeMax": 1,
-          "particleLifeTimeMin": 1,
+          "particleLifeTimeMax": 2,
+          "particleLifeTimeMin": 2,
           "particleRed1": 255,
           "particleRed2": 128,
           "particleSize1": 180,
@@ -1633,6 +1701,24 @@
           "behaviors": []
         },
         {
+          "bold": false,
+          "italic": false,
+          "name": "Health_TXT",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [],
+          "string": "HP:",
+          "font": "",
+          "characterSize": 20,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          }
+        },
+        {
           "additive": false,
           "alphaParam": "Mutable",
           "angleParam": "Mutable",
@@ -1707,24 +1793,6 @@
           }
         },
         {
-          "bold": false,
-          "italic": false,
-          "name": "Health_TXT",
-          "smoothed": true,
-          "type": "TextObject::Text",
-          "underlined": false,
-          "variables": [],
-          "behaviors": [],
-          "string": "HP:",
-          "font": "",
-          "characterSize": 20,
-          "color": {
-            "b": 255,
-            "g": 255,
-            "r": 255
-          }
-        },
-        {
           "bold": true,
           "italic": false,
           "name": "GameTime_TXT",
@@ -1762,8 +1830,26 @@
         },
         {
           "height": 20,
+          "name": "Healthbar_frame",
+          "texture": "HealthBar-frame.png",
+          "type": "TiledSpriteObject::TiledSprite",
+          "width": 500,
+          "variables": [],
+          "behaviors": []
+        },
+        {
+          "height": 20,
           "name": "HealthBar",
           "texture": "HealthBar-1.png",
+          "type": "TiledSpriteObject::TiledSprite",
+          "width": 500,
+          "variables": [],
+          "behaviors": []
+        },
+        {
+          "height": 20,
+          "name": "Healthbar_bg",
+          "texture": "HealthBar-bg.png",
           "type": "TiledSpriteObject::TiledSprite",
           "width": 500,
           "variables": [],
@@ -1841,7 +1927,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "background_0.png",
+                      "image": "background_00.jpg",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -1936,7 +2022,7 @@
               "parameters": [
                 "spawnrate",
                 "=",
-                "1"
+                "2"
               ],
               "subInstructions": []
             },
@@ -2787,6 +2873,20 @@
             {
               "type": {
                 "inverted": false,
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "shot.wav",
+                "",
+                "5",
+                "1"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
                 "value": "RotateTowardPosition"
               },
               "parameters": [
@@ -3127,17 +3227,6 @@
             }
           ],
           "actions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "ResetTimer"
-              },
-              "parameters": [
-                "",
-                "\"Enemy Spawning\""
-              ],
-              "subInstructions": []
-            },
             {
               "type": {
                 "inverted": false,
@@ -3784,16 +3873,28 @@
                   "events": []
                 }
               ]
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ResetTimer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Enemy Spawning\""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
             }
           ]
-        },
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": [],
-          "events": []
         }
       ],
       "layers": [
