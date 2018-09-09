@@ -2934,10 +2934,33 @@
           "variables": [
             {
               "name": "firerate",
-              "value": "1"
+              "value": ""
+            },
+            {
+              "name": "health",
+              "value": ""
             }
           ],
-          "behaviors": [],
+          "behaviors": [
+            {
+              "angularDamping": 0.1,
+              "autoResizing": false,
+              "averageFriction": 0.8,
+              "averageRestitution": 0,
+              "coordsList": "",
+              "dynamic": true,
+              "fixedRotation": false,
+              "isBullet": false,
+              "linearDamping": 0.1,
+              "massDensity": 1,
+              "name": "Physics",
+              "polygonHeight": 200,
+              "polygonWidth": 200,
+              "positioning": "OnCenter",
+              "shapeType": "Circle",
+              "type": "PhysicsBehavior::PhysicsBehavior"
+            }
+          ],
           "animations": [
             {
               "name": "",
@@ -2948,7 +2971,7 @@
                   "timeBetweenFrames": 1,
                   "sprites": [
                     {
-                      "hasCustomCollisionMask": false,
+                      "hasCustomCollisionMask": true,
                       "image": "boss.png",
                       "points": [],
                       "originPoint": {
@@ -2962,7 +2985,42 @@
                         "x": 232,
                         "y": 231
                       },
-                      "customCollisionMask": []
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 450,
+                            "y": 296
+                          },
+                          {
+                            "x": 332,
+                            "y": 450
+                          },
+                          {
+                            "x": 159,
+                            "y": 450
+                          },
+                          {
+                            "x": 10,
+                            "y": 300
+                          },
+                          {
+                            "x": 0,
+                            "y": 181
+                          },
+                          {
+                            "x": 134,
+                            "y": 16
+                          },
+                          {
+                            "x": 303,
+                            "y": 8
+                          },
+                          {
+                            "x": 457,
+                            "y": 160
+                          }
+                        ]
+                      ]
                     }
                   ]
                 }
@@ -3813,18 +3871,6 @@
                     ""
                   ],
                   "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "Timer"
-                  },
-                  "parameters": [
-                    "",
-                    "0.5",
-                    "\"DamageImmunity\""
-                  ],
-                  "subInstructions": []
                 }
               ],
               "actions": [
@@ -3854,15 +3900,38 @@
                     ""
                   ],
                   "subInstructions": []
-                },
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
                 {
                   "type": {
                     "inverted": false,
-                    "value": "ResetTimer"
+                    "value": "CollisionNP"
                   },
                   "parameters": [
-                    "",
-                    "\"DamageImmunity\""
+                    "PlayerBullet",
+                    "BossFire",
+                    "Player.Y()",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "PlayerBullet",
+                    "health"
                   ],
                   "subInstructions": []
                 }
@@ -5553,7 +5622,7 @@
                   },
                   "parameters": [
                     "",
-                    "10",
+                    "3",
                     "GameTimer"
                   ],
                   "subInstructions": []
@@ -5587,6 +5656,19 @@
                         "640",
                         "360",
                         "\"\""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarObjet"
+                      },
+                      "parameters": [
+                        "Boss",
+                        "health",
+                        "=",
+                        "100"
                       ],
                       "subInstructions": []
                     },
@@ -5653,6 +5735,19 @@
                         "",
                         "Boss.Variable(firerate)",
                         "\"BossFireCooldown\""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarObjet"
+                      },
+                      "parameters": [
+                        "Boss",
+                        "health",
+                        ">",
+                        "0"
                       ],
                       "subInstructions": []
                     }
@@ -5882,6 +5977,129 @@
                       "events": []
                     }
                   ]
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "CollisionNP"
+                      },
+                      "parameters": [
+                        "PlayerBullet",
+                        "Boss",
+                        "Player.Y()",
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarObjet"
+                      },
+                      "parameters": [
+                        "Boss",
+                        "health",
+                        "-",
+                        "2"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "Create"
+                      },
+                      "parameters": [
+                        "Enemy",
+                        "ExplosionParticles",
+                        "PlayerBullet.X()",
+                        "PlayerBullet.Y()",
+                        "\"\""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "Create"
+                      },
+                      "parameters": [
+                        "Enemy",
+                        "ExplosionLines",
+                        "PlayerBullet.X()",
+                        "PlayerBullet.Y()",
+                        "\"\""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "Delete"
+                      },
+                      "parameters": [
+                        "PlayerBullet",
+                        ""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "PlaySound"
+                      },
+                      "parameters": [
+                        "",
+                        "explosion.mp3",
+                        "",
+                        "2",
+                        "1.2"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarObjet"
+                      },
+                      "parameters": [
+                        "Boss",
+                        "health",
+                        "<=",
+                        "0"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "Delete"
+                      },
+                      "parameters": [
+                        "Boss",
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
                 }
               ]
             }
