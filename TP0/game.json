@@ -357,6 +357,500 @@
         "kind": "audio",
         "name": "shot.wav",
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "img/Survivor/Top_Down_Survivor/rifle/idle/survivor-idle_rifle_0.png",
+        "kind": "image",
+        "name": "survivor-idle_rifle_0.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "img/Survivor/Top_Down_Survivor/rifle/idle/survivor-idle_rifle_1.png",
+        "kind": "image",
+        "name": "survivor-idle_rifle_1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "img/Survivor/Top_Down_Survivor/rifle/idle/survivor-idle_rifle_2.png",
+        "kind": "image",
+        "name": "survivor-idle_rifle_2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "img/Survivor/Top_Down_Survivor/rifle/idle/survivor-idle_rifle_3.png",
+        "kind": "image",
+        "name": "survivor-idle_rifle_3.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "img/Survivor/Top_Down_Survivor/rifle/idle/survivor-idle_rifle_4.png",
+        "kind": "image",
+        "name": "survivor-idle_rifle_4.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "img/Survivor/Top_Down_Survivor/rifle/idle/survivor-idle_rifle_5.png",
+        "kind": "image",
+        "name": "survivor-idle_rifle_5.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "img/Survivor/Top_Down_Survivor/rifle/idle/survivor-idle_rifle_6.png",
+        "kind": "image",
+        "name": "survivor-idle_rifle_6.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "img/Survivor/Top_Down_Survivor/rifle/idle/survivor-idle_rifle_7.png",
+        "kind": "image",
+        "name": "survivor-idle_rifle_7.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "img/Survivor/Top_Down_Survivor/rifle/idle/survivor-idle_rifle_8.png",
+        "kind": "image",
+        "name": "survivor-idle_rifle_8.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "img/Survivor/Top_Down_Survivor/rifle/idle/survivor-idle_rifle_9.png",
+        "kind": "image",
+        "name": "survivor-idle_rifle_9.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "img/Survivor/Top_Down_Survivor/rifle/idle/survivor-idle_rifle_10.png",
+        "kind": "image",
+        "name": "survivor-idle_rifle_10.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "img/Survivor/Top_Down_Survivor/rifle/idle/survivor-idle_rifle_11.png",
+        "kind": "image",
+        "name": "survivor-idle_rifle_11.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "img/Survivor/Top_Down_Survivor/rifle/idle/survivor-idle_rifle_12.png",
+        "kind": "image",
+        "name": "survivor-idle_rifle_12.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "img/Survivor/Top_Down_Survivor/rifle/idle/survivor-idle_rifle_13.png",
+        "kind": "image",
+        "name": "survivor-idle_rifle_13.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "img/Survivor/Top_Down_Survivor/rifle/idle/survivor-idle_rifle_14.png",
+        "kind": "image",
+        "name": "survivor-idle_rifle_14.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "img/Survivor/Top_Down_Survivor/rifle/idle/survivor-idle_rifle_15.png",
+        "kind": "image",
+        "name": "survivor-idle_rifle_15.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "img/Survivor/Top_Down_Survivor/rifle/idle/survivor-idle_rifle_16.png",
+        "kind": "image",
+        "name": "survivor-idle_rifle_16.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "img/Survivor/Top_Down_Survivor/rifle/idle/survivor-idle_rifle_17.png",
+        "kind": "image",
+        "name": "survivor-idle_rifle_17.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "img/Survivor/Top_Down_Survivor/rifle/idle/survivor-idle_rifle_18.png",
+        "kind": "image",
+        "name": "survivor-idle_rifle_18.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "img/Survivor/Top_Down_Survivor/rifle/idle/survivor-idle_rifle_19.png",
+        "kind": "image",
+        "name": "survivor-idle_rifle_19.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "img/Survivor/Top_Down_Survivor/rifle/shoot/survivor-shoot_rifle_0.png",
+        "kind": "image",
+        "name": "survivor-shoot_rifle_0.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "img/Survivor/Top_Down_Survivor/rifle/shoot/survivor-shoot_rifle_1.png",
+        "kind": "image",
+        "name": "survivor-shoot_rifle_1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "img/Survivor/Top_Down_Survivor/rifle/shoot/survivor-shoot_rifle_2.png",
+        "kind": "image",
+        "name": "survivor-shoot_rifle_2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "img/Survivor/Top_Down_Survivor/rifle/move/survivor-move_rifle_0.png",
+        "kind": "image",
+        "name": "survivor-move_rifle_0.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "img/Survivor/Top_Down_Survivor/rifle/move/survivor-move_rifle_1.png",
+        "kind": "image",
+        "name": "survivor-move_rifle_1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "img/Survivor/Top_Down_Survivor/rifle/move/survivor-move_rifle_2.png",
+        "kind": "image",
+        "name": "survivor-move_rifle_2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "img/Survivor/Top_Down_Survivor/rifle/move/survivor-move_rifle_3.png",
+        "kind": "image",
+        "name": "survivor-move_rifle_3.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "img/Survivor/Top_Down_Survivor/rifle/move/survivor-move_rifle_4.png",
+        "kind": "image",
+        "name": "survivor-move_rifle_4.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "img/Survivor/Top_Down_Survivor/rifle/move/survivor-move_rifle_5.png",
+        "kind": "image",
+        "name": "survivor-move_rifle_5.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "img/Survivor/Top_Down_Survivor/rifle/move/survivor-move_rifle_6.png",
+        "kind": "image",
+        "name": "survivor-move_rifle_6.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "img/Survivor/Top_Down_Survivor/rifle/move/survivor-move_rifle_7.png",
+        "kind": "image",
+        "name": "survivor-move_rifle_7.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "img/Survivor/Top_Down_Survivor/rifle/move/survivor-move_rifle_8.png",
+        "kind": "image",
+        "name": "survivor-move_rifle_8.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "img/Survivor/Top_Down_Survivor/rifle/move/survivor-move_rifle_9.png",
+        "kind": "image",
+        "name": "survivor-move_rifle_9.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "img/Survivor/Top_Down_Survivor/rifle/move/survivor-move_rifle_10.png",
+        "kind": "image",
+        "name": "survivor-move_rifle_10.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "img/Survivor/Top_Down_Survivor/rifle/move/survivor-move_rifle_11.png",
+        "kind": "image",
+        "name": "survivor-move_rifle_11.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "img/Survivor/Top_Down_Survivor/rifle/move/survivor-move_rifle_12.png",
+        "kind": "image",
+        "name": "survivor-move_rifle_12.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "img/Survivor/Top_Down_Survivor/rifle/move/survivor-move_rifle_13.png",
+        "kind": "image",
+        "name": "survivor-move_rifle_13.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "img/Survivor/Top_Down_Survivor/rifle/move/survivor-move_rifle_14.png",
+        "kind": "image",
+        "name": "survivor-move_rifle_14.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "img/Survivor/Top_Down_Survivor/rifle/move/survivor-move_rifle_15.png",
+        "kind": "image",
+        "name": "survivor-move_rifle_15.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "img/Survivor/Top_Down_Survivor/rifle/move/survivor-move_rifle_16.png",
+        "kind": "image",
+        "name": "survivor-move_rifle_16.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "img/Survivor/Top_Down_Survivor/rifle/move/survivor-move_rifle_17.png",
+        "kind": "image",
+        "name": "survivor-move_rifle_17.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "img/Survivor/Top_Down_Survivor/rifle/move/survivor-move_rifle_18.png",
+        "kind": "image",
+        "name": "survivor-move_rifle_18.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "img/Survivor/Top_Down_Survivor/rifle/move/survivor-move_rifle_19.png",
+        "kind": "image",
+        "name": "survivor-move_rifle_19.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "img/PlayerBullet-1-0.png",
+        "kind": "image",
+        "name": "PlayerBullet-1-0.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "img/Player-1.png",
+        "kind": "image",
+        "name": "Player-1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "snd/hit.ogg",
+        "kind": "audio",
+        "name": "hit.ogg",
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "img/bomba/WaUzeid_0000_Camada-16.png",
+        "kind": "image",
+        "name": "WaUzeid_0000_Camada-16.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "img/bomba/WaUzeid_0001_Camada-15.png",
+        "kind": "image",
+        "name": "WaUzeid_0001_Camada-15.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "img/bomba/WaUzeid_0002_Camada-14.png",
+        "kind": "image",
+        "name": "WaUzeid_0002_Camada-14.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "img/bomba/WaUzeid_0003_Camada-13.png",
+        "kind": "image",
+        "name": "WaUzeid_0003_Camada-13.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "img/bomba/WaUzeid_0004_Camada-12.png",
+        "kind": "image",
+        "name": "WaUzeid_0004_Camada-12.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "img/bomba/WaUzeid_0005_Camada-11.png",
+        "kind": "image",
+        "name": "WaUzeid_0005_Camada-11.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "img/bomba/WaUzeid_0006_Camada-10.png",
+        "kind": "image",
+        "name": "WaUzeid_0006_Camada-10.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "img/bomba/WaUzeid_0007_Camada-9.png",
+        "kind": "image",
+        "name": "WaUzeid_0007_Camada-9.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "img/bomba/WaUzeid_0008_Camada-8.png",
+        "kind": "image",
+        "name": "WaUzeid_0008_Camada-8.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "img/bomba/WaUzeid_0009_Camada-7.png",
+        "kind": "image",
+        "name": "WaUzeid_0009_Camada-7.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "img/bomba/WaUzeid_0010_Camada-6.png",
+        "kind": "image",
+        "name": "WaUzeid_0010_Camada-6.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "img/bomba/WaUzeid_0011_Camada-5.png",
+        "kind": "image",
+        "name": "WaUzeid_0011_Camada-5.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "img/bomba/WaUzeid_0012_Camada-4.png",
+        "kind": "image",
+        "name": "WaUzeid_0012_Camada-4.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "img/bomba/WaUzeid_0013_Camada-3.png",
+        "kind": "image",
+        "name": "WaUzeid_0013_Camada-3.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "img/bomba/WaUzeid_0014_Camada-2.png",
+        "kind": "image",
+        "name": "WaUzeid_0014_Camada-2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "img/bomba/WaUzeid_0015_Camada-1.png",
+        "kind": "image",
+        "name": "WaUzeid_0015_Camada-1.png",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -636,13 +1130,13 @@
         {
           "angle": 0,
           "customSize": false,
-          "height": 0,
+          "height": 64,
           "layer": "",
           "locked": false,
           "name": "Player",
-          "width": 0,
-          "x": 640,
-          "y": 360,
+          "width": 64,
+          "x": 645,
+          "y": 348,
           "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
@@ -656,8 +1150,8 @@
           "locked": false,
           "name": "GameOver_TXT",
           "width": 0,
-          "x": 368,
-          "y": 182,
+          "x": 506,
+          "y": 320,
           "zOrder": 7,
           "numberProperties": [],
           "stringProperties": [],
@@ -821,8 +1315,8 @@
           "locked": false,
           "name": "TryAgain_TXT",
           "width": 5000,
-          "x": 529,
-          "y": 438,
+          "x": 1120,
+          "y": 645,
           "zOrder": 28,
           "numberProperties": [],
           "stringProperties": [],
@@ -887,6 +1381,21 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "HUD",
+          "locked": false,
+          "name": "GameOverShadow_TXT",
+          "width": 0,
+          "x": 506,
+          "y": 321.969,
+          "zOrder": 6,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "objects": [
@@ -935,11 +1444,11 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "Player_red.png",
+                      "image": "Player-1.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
-                        "x": 20,
+                        "x": 30,
                         "y": 20
                       },
                       "centerPoint": {
@@ -948,7 +1457,30 @@
                         "x": 0,
                         "y": 0
                       },
-                      "customCollisionMask": []
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 19,
+                            "y": 0
+                          },
+                          {
+                            "x": 40,
+                            "y": 19
+                          },
+                          {
+                            "x": 19,
+                            "y": 40
+                          },
+                          {
+                            "x": 0,
+                            "y": 26
+                          },
+                          {
+                            "x": 0,
+                            "y": 15
+                          }
+                        ]
+                      ]
                     }
                   ]
                 }
@@ -973,12 +1505,12 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "PlayerBullet-1.png",
+                      "image": "PlayerBullet-1-0.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
-                        "x": 0,
-                        "y": 0
+                        "x": 22,
+                        "y": 5
                       },
                       "centerPoint": {
                         "automatic": true,
@@ -1021,385 +1553,585 @@
           ],
           "animations": [
             {
-              "name": "Enemy",
+              "name": "",
               "useMultipleDirections": false,
               "directions": [
                 {
-                  "looping": false,
-                  "timeBetweenFrames": 1,
+                  "looping": true,
+                  "timeBetweenFrames": 0.08,
                   "sprites": [
                     {
-                      "hasCustomCollisionMask": false,
-                      "image": "Enemy-1-2.png",
+                      "hasCustomCollisionMask": true,
+                      "image": "WaUzeid_0000_Camada-16.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
-                        "x": 16,
-                        "y": 16
+                        "x": 23,
+                        "y": 23
                       },
                       "centerPoint": {
-                        "automatic": true,
+                        "automatic": false,
                         "name": "centre",
-                        "x": 0,
-                        "y": 0
+                        "x": 23,
+                        "y": 23
                       },
                       "customCollisionMask": [
                         [
                           {
-                            "x": 10,
-                            "y": 0
+                            "x": 6.5,
+                            "y": 6.5
                           },
                           {
-                            "x": 32,
-                            "y": 10
+                            "x": 38.5,
+                            "y": 6.5
                           },
                           {
-                            "x": 32,
-                            "y": 32
+                            "x": 38.5,
+                            "y": 38.5
                           },
                           {
-                            "x": 0,
-                            "y": 32
-                          },
-                          {
-                            "x": 0,
-                            "y": 0
-                          },
-                          {
-                            "x": 22,
-                            "y": 0
-                          },
-                          {
-                            "x": 0,
-                            "y": 22
-                          },
-                          {
-                            "x": 10,
-                            "y": 32
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "name": "Spawning",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.2,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "Enemy-1-1.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 16,
-                        "y": 16
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 10,
-                            "y": 0
-                          },
-                          {
-                            "x": 32,
-                            "y": 10
-                          },
-                          {
-                            "x": 32,
-                            "y": 32
-                          },
-                          {
-                            "x": 0,
-                            "y": 32
-                          },
-                          {
-                            "x": 0,
-                            "y": 0
-                          },
-                          {
-                            "x": 22,
-                            "y": 0
-                          },
-                          {
-                            "x": 0,
-                            "y": 22
-                          },
-                          {
-                            "x": 10,
-                            "y": 32
+                            "x": 6.5,
+                            "y": 38.5
                           }
                         ]
                       ]
                     },
                     {
-                      "hasCustomCollisionMask": false,
-                      "image": "Enemy-2.png",
+                      "hasCustomCollisionMask": true,
+                      "image": "WaUzeid_0001_Camada-15.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
-                        "x": 16,
-                        "y": 16
+                        "x": 23,
+                        "y": 23
                       },
                       "centerPoint": {
-                        "automatic": true,
+                        "automatic": false,
                         "name": "centre",
-                        "x": 0,
-                        "y": 0
+                        "x": 23,
+                        "y": 23
                       },
                       "customCollisionMask": [
                         [
                           {
-                            "x": 10,
-                            "y": 0
+                            "x": 6.5,
+                            "y": 6.5
                           },
                           {
-                            "x": 32,
-                            "y": 10
+                            "x": 38.5,
+                            "y": 6.5
                           },
                           {
-                            "x": 32,
-                            "y": 32
+                            "x": 38.5,
+                            "y": 38.5
                           },
                           {
-                            "x": 0,
-                            "y": 32
-                          },
-                          {
-                            "x": 0,
-                            "y": 0
-                          },
-                          {
-                            "x": 22,
-                            "y": 0
-                          },
-                          {
-                            "x": 0,
-                            "y": 22
-                          },
-                          {
-                            "x": 10,
-                            "y": 32
+                            "x": 6.5,
+                            "y": 38.5
                           }
                         ]
                       ]
                     },
                     {
-                      "hasCustomCollisionMask": false,
-                      "image": "Enemy-3.png",
+                      "hasCustomCollisionMask": true,
+                      "image": "WaUzeid_0002_Camada-14.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
-                        "x": 16,
-                        "y": 16
+                        "x": 23,
+                        "y": 23
                       },
                       "centerPoint": {
-                        "automatic": true,
+                        "automatic": false,
                         "name": "centre",
-                        "x": 0,
-                        "y": 0
+                        "x": 23,
+                        "y": 23
                       },
                       "customCollisionMask": [
                         [
                           {
-                            "x": 10,
-                            "y": 0
+                            "x": 6.5,
+                            "y": 6.5
                           },
                           {
-                            "x": 32,
-                            "y": 10
+                            "x": 38.5,
+                            "y": 6.5
                           },
                           {
-                            "x": 32,
-                            "y": 32
+                            "x": 38.5,
+                            "y": 38.5
                           },
                           {
-                            "x": 0,
-                            "y": 32
-                          },
-                          {
-                            "x": 0,
-                            "y": 0
-                          },
-                          {
-                            "x": 22,
-                            "y": 0
-                          },
-                          {
-                            "x": 0,
-                            "y": 22
-                          },
-                          {
-                            "x": 10,
-                            "y": 32
+                            "x": 6.5,
+                            "y": 38.5
                           }
                         ]
                       ]
                     },
                     {
-                      "hasCustomCollisionMask": false,
-                      "image": "Enemy-4.png",
+                      "hasCustomCollisionMask": true,
+                      "image": "WaUzeid_0003_Camada-13.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
-                        "x": 16,
-                        "y": 16
+                        "x": 23,
+                        "y": 23
                       },
                       "centerPoint": {
-                        "automatic": true,
+                        "automatic": false,
                         "name": "centre",
-                        "x": 0,
-                        "y": 0
+                        "x": 23,
+                        "y": 23
                       },
                       "customCollisionMask": [
                         [
                           {
-                            "x": 10,
-                            "y": 0
+                            "x": 6.5,
+                            "y": 6.5
                           },
                           {
-                            "x": 32,
-                            "y": 10
+                            "x": 38.5,
+                            "y": 6.5
                           },
                           {
-                            "x": 32,
-                            "y": 32
+                            "x": 38.5,
+                            "y": 38.5
                           },
                           {
-                            "x": 0,
-                            "y": 32
-                          },
-                          {
-                            "x": 0,
-                            "y": 0
-                          },
-                          {
-                            "x": 22,
-                            "y": 0
-                          },
-                          {
-                            "x": 0,
-                            "y": 22
-                          },
-                          {
-                            "x": 10,
-                            "y": 32
+                            "x": 6.5,
+                            "y": 38.5
                           }
                         ]
                       ]
                     },
                     {
-                      "hasCustomCollisionMask": false,
-                      "image": "Enemy-5.png",
+                      "hasCustomCollisionMask": true,
+                      "image": "WaUzeid_0004_Camada-12.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
-                        "x": 16,
-                        "y": 16
+                        "x": 23,
+                        "y": 23
                       },
                       "centerPoint": {
-                        "automatic": true,
+                        "automatic": false,
                         "name": "centre",
-                        "x": 0,
-                        "y": 0
+                        "x": 23,
+                        "y": 23
                       },
                       "customCollisionMask": [
                         [
                           {
-                            "x": 10,
-                            "y": 0
+                            "x": 6.5,
+                            "y": 6.5
                           },
                           {
-                            "x": 32,
-                            "y": 10
+                            "x": 38.5,
+                            "y": 6.5
                           },
                           {
-                            "x": 32,
-                            "y": 32
+                            "x": 38.5,
+                            "y": 38.5
                           },
                           {
-                            "x": 0,
-                            "y": 32
-                          },
-                          {
-                            "x": 0,
-                            "y": 0
-                          },
-                          {
-                            "x": 22,
-                            "y": 0
-                          },
-                          {
-                            "x": 0,
-                            "y": 22
-                          },
-                          {
-                            "x": 10,
-                            "y": 32
+                            "x": 6.5,
+                            "y": 38.5
                           }
                         ]
                       ]
                     },
                     {
-                      "hasCustomCollisionMask": false,
-                      "image": "Enemy-1-0.png",
+                      "hasCustomCollisionMask": true,
+                      "image": "WaUzeid_0005_Camada-11.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
-                        "x": 16,
-                        "y": 16
+                        "x": 23,
+                        "y": 23
                       },
                       "centerPoint": {
-                        "automatic": true,
+                        "automatic": false,
                         "name": "centre",
-                        "x": 0,
-                        "y": 0
+                        "x": 23,
+                        "y": 23
                       },
                       "customCollisionMask": [
                         [
                           {
-                            "x": 10,
-                            "y": 0
+                            "x": 6.5,
+                            "y": 6.5
                           },
                           {
-                            "x": 32,
-                            "y": 10
+                            "x": 38.5,
+                            "y": 6.5
                           },
                           {
-                            "x": 32,
-                            "y": 32
+                            "x": 38.5,
+                            "y": 38.5
                           },
                           {
-                            "x": 0,
-                            "y": 32
+                            "x": 6.5,
+                            "y": 38.5
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "WaUzeid_0006_Camada-10.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 23,
+                        "y": 23
+                      },
+                      "centerPoint": {
+                        "automatic": false,
+                        "name": "centre",
+                        "x": 23,
+                        "y": 23
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 6.5,
+                            "y": 6.5
                           },
                           {
-                            "x": 0,
-                            "y": 0
+                            "x": 38.5,
+                            "y": 6.5
                           },
                           {
-                            "x": 22,
-                            "y": 0
+                            "x": 38.5,
+                            "y": 38.5
                           },
                           {
-                            "x": 0,
-                            "y": 22
+                            "x": 6.5,
+                            "y": 38.5
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "WaUzeid_0007_Camada-9.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 23,
+                        "y": 23
+                      },
+                      "centerPoint": {
+                        "automatic": false,
+                        "name": "centre",
+                        "x": 23,
+                        "y": 23
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 6.5,
+                            "y": 6.5
                           },
                           {
-                            "x": 10,
-                            "y": 32
+                            "x": 38.5,
+                            "y": 6.5
+                          },
+                          {
+                            "x": 38.5,
+                            "y": 38.5
+                          },
+                          {
+                            "x": 6.5,
+                            "y": 38.5
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "WaUzeid_0008_Camada-8.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 23,
+                        "y": 23
+                      },
+                      "centerPoint": {
+                        "automatic": false,
+                        "name": "centre",
+                        "x": 23,
+                        "y": 23
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 6.5,
+                            "y": 6.5
+                          },
+                          {
+                            "x": 38.5,
+                            "y": 6.5
+                          },
+                          {
+                            "x": 38.5,
+                            "y": 38.5
+                          },
+                          {
+                            "x": 6.5,
+                            "y": 38.5
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "WaUzeid_0009_Camada-7.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 23,
+                        "y": 23
+                      },
+                      "centerPoint": {
+                        "automatic": false,
+                        "name": "centre",
+                        "x": 23,
+                        "y": 23
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 6.5,
+                            "y": 6.5
+                          },
+                          {
+                            "x": 38.5,
+                            "y": 6.5
+                          },
+                          {
+                            "x": 38.5,
+                            "y": 38.5
+                          },
+                          {
+                            "x": 6.5,
+                            "y": 38.5
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "WaUzeid_0010_Camada-6.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 23,
+                        "y": 23
+                      },
+                      "centerPoint": {
+                        "automatic": false,
+                        "name": "centre",
+                        "x": 23,
+                        "y": 23
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 6.5,
+                            "y": 6.5
+                          },
+                          {
+                            "x": 38.5,
+                            "y": 6.5
+                          },
+                          {
+                            "x": 38.5,
+                            "y": 38.5
+                          },
+                          {
+                            "x": 6.5,
+                            "y": 38.5
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "WaUzeid_0011_Camada-5.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 23,
+                        "y": 23
+                      },
+                      "centerPoint": {
+                        "automatic": false,
+                        "name": "centre",
+                        "x": 23,
+                        "y": 23
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 6.5,
+                            "y": 6.5
+                          },
+                          {
+                            "x": 38.5,
+                            "y": 6.5
+                          },
+                          {
+                            "x": 38.5,
+                            "y": 38.5
+                          },
+                          {
+                            "x": 6.5,
+                            "y": 38.5
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "WaUzeid_0012_Camada-4.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 23,
+                        "y": 23
+                      },
+                      "centerPoint": {
+                        "automatic": false,
+                        "name": "centre",
+                        "x": 23,
+                        "y": 23
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 6.5,
+                            "y": 6.5
+                          },
+                          {
+                            "x": 38.5,
+                            "y": 6.5
+                          },
+                          {
+                            "x": 38.5,
+                            "y": 38.5
+                          },
+                          {
+                            "x": 6.5,
+                            "y": 38.5
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "WaUzeid_0013_Camada-3.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 23,
+                        "y": 23
+                      },
+                      "centerPoint": {
+                        "automatic": false,
+                        "name": "centre",
+                        "x": 23,
+                        "y": 23
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 6.5,
+                            "y": 6.5
+                          },
+                          {
+                            "x": 38.5,
+                            "y": 6.5
+                          },
+                          {
+                            "x": 38.5,
+                            "y": 38.5
+                          },
+                          {
+                            "x": 6.5,
+                            "y": 38.5
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "WaUzeid_0014_Camada-2.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 23,
+                        "y": 23
+                      },
+                      "centerPoint": {
+                        "automatic": false,
+                        "name": "centre",
+                        "x": 23,
+                        "y": 23
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 6.5,
+                            "y": 6.5
+                          },
+                          {
+                            "x": 38.5,
+                            "y": 6.5
+                          },
+                          {
+                            "x": 38.5,
+                            "y": 38.5
+                          },
+                          {
+                            "x": 6.5,
+                            "y": 38.5
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "WaUzeid_0015_Camada-1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 23,
+                        "y": 23
+                      },
+                      "centerPoint": {
+                        "automatic": false,
+                        "name": "centre",
+                        "x": 23,
+                        "y": 23
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 6.5,
+                            "y": 6.5
+                          },
+                          {
+                            "x": 38.5,
+                            "y": 6.5
+                          },
+                          {
+                            "x": 38.5,
+                            "y": 38.5
+                          },
+                          {
+                            "x": 6.5,
+                            "y": 38.5
                           }
                         ]
                       ]
@@ -1783,13 +2515,31 @@
           "underlined": false,
           "variables": [],
           "behaviors": [],
-          "string": "GAME OVER",
+          "string": "KO",
+          "font": "",
+          "characterSize": 50,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          }
+        },
+        {
+          "bold": true,
+          "italic": false,
+          "name": "GameOverShadow_TXT",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [],
+          "string": "KO",
           "font": "",
           "characterSize": 50,
           "color": {
             "b": 0,
             "g": 0,
-            "r": 197
+            "r": 0
           }
         },
         {
@@ -1998,6 +2748,16 @@
                 "value": "Cache"
               },
               "parameters": [
+                "GameOverShadow_TXT"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Cache"
+              },
+              "parameters": [
                 "TryAgain_TXT"
               ],
               "subInstructions": []
@@ -2067,6 +2827,17 @@
             {
               "type": {
                 "inverted": false,
+                "value": "ResetTimer"
+              },
+              "parameters": [
+                "",
+                "\"DamageImmunity\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
                 "value": "ModVarObjet"
               },
               "parameters": [
@@ -2088,6 +2859,18 @@
                 "Player.X()",
                 "Player.Y()",
                 "\"\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "TiledSpriteObject::Width"
+              },
+              "parameters": [
+                "Healthbar_frame",
+                "=",
+                "Player.Variable(health)*10"
               ],
               "subInstructions": []
             }
@@ -2175,6 +2958,20 @@
                 {
                   "type": {
                     "inverted": false,
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "hit.ogg",
+                    "",
+                    "",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
                     "value": "ResetTimer"
                   },
                   "parameters": [
@@ -2214,7 +3011,19 @@
                   "parameters": [
                     "GameOver_TXT",
                     "=",
-                    "\"YOU DIED. Final score: \"+ LargeNumberToString(Variable(TimeCount))"
+                    "\"  YOU DIED!\nFinal score: \"+ LargeNumberToString(Variable(TimeCount))"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "GameOverShadow_TXT",
+                    "=",
+                    "\"  YOU DIED!\nFinal score: \"+ LargeNumberToString(Variable(TimeCount))"
                   ],
                   "subInstructions": []
                 },
@@ -2225,6 +3034,17 @@
                   },
                   "parameters": [
                     "GameOver_TXT",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "GameOverShadow_TXT",
                     ""
                   ],
                   "subInstructions": []
@@ -2924,101 +3744,7 @@
               "subInstructions": []
             }
           ],
-          "events": [
-            {
-              "disabled": true,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "Create"
-                  },
-                  "parameters": [
-                    "",
-                    "PlayerBullet",
-                    "Player.X()",
-                    "Player.Y()",
-                    "\"\""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "RotateTowardPosition"
-                  },
-                  "parameters": [
-                    "PlayerBullet",
-                    "MouseX(\"\",0)",
-                    "MouseY(\"\",0)",
-                    "",
-                    ""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "AddForceVersPos"
-                  },
-                  "parameters": [
-                    "PlayerBullet",
-                    "-Random(80)+MouseX(\"\",0)",
-                    "-Random(80)+MouseY(\"\",0)",
-                    "1000",
-                    "1"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "Create"
-                  },
-                  "parameters": [
-                    "",
-                    "PlayerBullet",
-                    "Player.X()",
-                    "Player.Y()",
-                    "\"\""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "RotateTowardPosition"
-                  },
-                  "parameters": [
-                    "PlayerBullet",
-                    "MouseX(\"\",0)",
-                    "MouseY(\"\",0)",
-                    "",
-                    ""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "AddForceVersPos"
-                  },
-                  "parameters": [
-                    "PlayerBullet",
-                    "Random(80)+MouseX(\"\",0)",
-                    "Random(80)+MouseY(\"\",0)",
-                    "1000",
-                    "1"
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "events": []
-            }
-          ]
+          "events": []
         },
         {
           "disabled": false,
