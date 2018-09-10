@@ -1125,6 +1125,10 @@
     {
       "name": "gameover",
       "value": ""
+    },
+    {
+      "name": "score",
+      "value": ""
     }
   ],
   "layouts": [
@@ -1537,6 +1541,10 @@
         {
           "name": "TimeCount",
           "value": "0"
+        },
+        {
+          "name": "score",
+          "value": ""
         }
       ],
       "instances": [
@@ -4098,6 +4106,18 @@
             {
               "type": {
                 "inverted": false,
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "score",
+                "=",
+                "0"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
                 "value": "ModVarObjet"
               },
               "parameters": [
@@ -4427,7 +4447,7 @@
                   "parameters": [
                     "GameOver_TXT",
                     "=",
-                    "\"  YOU DIED!\nFinal score: \"+ LargeNumberToString(Variable(TimeCount))"
+                    "\"  YOU DIED!\nFinal score: \"+ LargeNumberToString(Variable(TimeCount)+Variable(score))"
                   ],
                   "subInstructions": []
                 },
@@ -4439,7 +4459,7 @@
                   "parameters": [
                     "GameOverShadow_TXT",
                     "=",
-                    "\"  YOU DIED!\nFinal score: \"+ LargeNumberToString(Variable(TimeCount))"
+                    "\"  YOU DIED!\nFinal score: \"+ LargeNumberToString(Variable(TimeCount)+Variable(score))"
                   ],
                   "subInstructions": []
                 },
@@ -5438,6 +5458,18 @@
                 "",
                 "10",
                 "1.2"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "score",
+                "+",
+                "1"
               ],
               "subInstructions": []
             }
