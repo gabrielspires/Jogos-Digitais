@@ -21,7 +21,7 @@ gdjs.GameMenuCode.condition0IsTrue_0.val = false;
 {
 gdjs.GameMenuCode.condition0IsTrue_0.val = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
 }if (gdjs.GameMenuCode.condition0IsTrue_0.val) {
-{gdjs.evtTools.sound.playMusic(runtimeScene, "MenuMusic.mp3", true, 8, 1);
+{gdjs.evtTools.sound.playMusic(runtimeScene, "MenuMusic.mp3", true, 15, 1);
 }}
 
 }
