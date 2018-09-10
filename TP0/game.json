@@ -1751,8 +1751,8 @@
           "locked": false,
           "name": "TryAgain_TXT",
           "width": 0,
-          "x": 1010,
-          "y": 598,
+          "x": 1092,
+          "y": 609,
           "zOrder": 28,
           "numberProperties": [],
           "stringProperties": [],
@@ -1841,8 +1841,8 @@
           "locked": false,
           "name": "MainMenu_TXT",
           "width": 0,
-          "x": 1010,
-          "y": 542,
+          "x": 1092,
+          "y": 553,
           "zOrder": 31,
           "numberProperties": [],
           "stringProperties": [],
@@ -1856,8 +1856,8 @@
           "locked": false,
           "name": "Quit_TXT",
           "width": 0,
-          "x": 1010,
-          "y": 654,
+          "x": 1092,
+          "y": 665,
           "zOrder": 32,
           "numberProperties": [],
           "stringProperties": [],
@@ -3110,7 +3110,7 @@
           "behaviors": [],
           "string": "Quit Game",
           "font": "",
-          "characterSize": 50,
+          "characterSize": 30,
           "color": {
             "b": 255,
             "g": 255,
@@ -3128,7 +3128,7 @@
           "behaviors": [],
           "string": "Main Menu",
           "font": "",
-          "characterSize": 50,
+          "characterSize": 30,
           "color": {
             "b": 255,
             "g": 255,
@@ -3146,7 +3146,7 @@
           "behaviors": [],
           "string": "Try Again",
           "font": "",
-          "characterSize": 50,
+          "characterSize": 30,
           "color": {
             "b": 255,
             "g": 255,
@@ -5960,7 +5960,7 @@
               ]
             },
             {
-              "disabled": false,
+              "disabled": true,
               "folded": false,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
@@ -6065,7 +6065,7 @@
               ]
             },
             {
-              "disabled": false,
+              "disabled": true,
               "folded": false,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
@@ -6371,7 +6371,7 @@
                         "Boss",
                         "health",
                         "=",
-                        "100"
+                        "50"
                       ],
                       "subInstructions": []
                     },
@@ -6921,6 +6921,28 @@
                         "value": "Montre"
                       },
                       "parameters": [
+                        "MainMenu_TXT",
+                        ""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "Montre"
+                      },
+                      "parameters": [
+                        "Quit_TXT",
+                        ""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "Montre"
+                      },
+                      "parameters": [
                         "TryAgain_TXT",
                         ""
                       ],
@@ -6936,9 +6958,84 @@
                         ""
                       ],
                       "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "PauseTimer"
+                      },
+                      "parameters": [
+                        "",
+                        "\"GameTimer\""
+                      ],
+                      "subInstructions": []
                     }
                   ],
-                  "events": []
+                  "events": [
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::ForEach",
+                      "object": "Enemy",
+                      "conditions": [],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "Create"
+                          },
+                          "parameters": [
+                            "Enemy",
+                            "ExplosionLines",
+                            "Enemy.X()",
+                            "Enemy.Y()",
+                            "\"\""
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "Create"
+                          },
+                          "parameters": [
+                            "Enemy",
+                            "ExplosionParticles",
+                            "Enemy.X()",
+                            "Enemy.Y()",
+                            "\"\""
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "Delete"
+                          },
+                          "parameters": [
+                            "Enemy",
+                            ""
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "PlaySound"
+                          },
+                          "parameters": [
+                            "",
+                            "explosion.mp3",
+                            "",
+                            "3",
+                            "1.2"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    }
+                  ]
                 }
               ]
             }
