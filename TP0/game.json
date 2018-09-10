@@ -1095,6 +1095,26 @@
         "kind": "audio",
         "name": "boss_explosion.mp3",
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "img/mainmenu_bg.jpg",
+        "kind": "image",
+        "name": "mainmenu_bg.jpg",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "snd/BossTheme.mp3",
+        "kind": "audio",
+        "name": "BossTheme.mp3",
+        "userAdded": true
+      },
+      {
+        "file": "snd/MenuMusic.mp3",
+        "kind": "audio",
+        "name": "MenuMusic.mp3",
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -1119,7 +1139,7 @@
       "r": 0,
       "standardSortMethod": true,
       "stopSoundsOnStartup": true,
-      "title": "",
+      "title": "Space Survival Shooter",
       "v": 0,
       "uiSettings": {
         "grid": false,
@@ -1145,9 +1165,39 @@
           "locked": false,
           "name": "Play_TXT",
           "width": 0,
-          "x": 640,
-          "y": 311,
+          "x": 232,
+          "y": 425,
           "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "Background",
+          "width": 0,
+          "x": 0,
+          "y": 0,
+          "zOrder": 0,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "Quit_TXT",
+          "width": 0,
+          "x": 235,
+          "y": 542,
+          "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -1157,23 +1207,113 @@
         {
           "bold": true,
           "italic": false,
+          "name": "Quit_TXT",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [],
+          "string": "Quit",
+          "font": "",
+          "characterSize": 60,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          }
+        },
+        {
+          "bold": true,
+          "italic": false,
           "name": "Play_TXT",
           "smoothed": true,
           "type": "TextObject::Text",
           "underlined": false,
           "variables": [],
           "behaviors": [],
-          "string": "Play!",
+          "string": "Play",
           "font": "",
-          "characterSize": 40,
+          "characterSize": 60,
           "color": {
             "b": 255,
             "g": 255,
             "r": 255
           }
+        },
+        {
+          "name": "Background",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 1,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "mainmenu_bg.jpg",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "events": [
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "PlayMusic"
+              },
+              "parameters": [
+                "",
+                "MenuMusic.mp3",
+                "yes",
+                "8",
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
         {
           "disabled": false,
           "folded": false,
@@ -1213,6 +1353,50 @@
               "parameters": [
                 "",
                 "\"GameScene\"",
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "SourisSurObjet"
+              },
+              "parameters": [
+                "Quit_TXT",
+                "",
+                "",
+                ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "SourisBouton"
+              },
+              "parameters": [
+                "",
+                "Left"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "Quit"
+              },
+              "parameters": [
                 ""
               ],
               "subInstructions": []
@@ -1559,7 +1743,7 @@
           "locked": false,
           "name": "TryAgain_TXT",
           "width": 0,
-          "x": 1108,
+          "x": 1010,
           "y": 598,
           "zOrder": 28,
           "numberProperties": [],
@@ -1649,7 +1833,7 @@
           "locked": false,
           "name": "MainMenu_TXT",
           "width": 0,
-          "x": 1108,
+          "x": 1010,
           "y": 542,
           "zOrder": 31,
           "numberProperties": [],
@@ -1664,7 +1848,7 @@
           "locked": false,
           "name": "Quit_TXT",
           "width": 0,
-          "x": 1108,
+          "x": 1010,
           "y": 654,
           "zOrder": 32,
           "numberProperties": [],
@@ -3927,13 +4111,14 @@
             {
               "type": {
                 "inverted": false,
-                "value": "PlayMusic"
+                "value": "PlayMusicCanal"
               },
               "parameters": [
                 "",
                 "Mattashi_Lost_in_Pixels.mp3",
+                "1",
                 "yes",
-                "30",
+                "20",
                 ""
               ],
               "subInstructions": []
@@ -6161,6 +6346,17 @@
                     {
                       "type": {
                         "inverted": false,
+                        "value": "StopMusicCanal"
+                      },
+                      "parameters": [
+                        "",
+                        "1"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
                         "value": "ChangePlan"
                       },
                       "parameters": [
@@ -6180,6 +6376,21 @@
                         "firerate",
                         "=",
                         "0.4"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "PlayMusicCanal"
+                      },
+                      "parameters": [
+                        "",
+                        "BossTheme.mp3",
+                        "1",
+                        "yes",
+                        "20",
+                        ""
                       ],
                       "subInstructions": []
                     }
