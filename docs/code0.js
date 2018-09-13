@@ -12,7 +12,7 @@ gdjs.GameMenuCode.condition1IsTrue_0 = {val:false};
 gdjs.GameMenuCode.condition2IsTrue_0 = {val:false};
 
 
-gdjs.GameMenuCode.mapOfGDgdjs_46GameMenuCode_46GDPlay_9595TXTObjects1Objects = Hashtable.newFrom({"Play_TXT": gdjs.GameMenuCode.GDPlay_95TXTObjects1});gdjs.GameMenuCode.mapOfGDgdjs_46GameMenuCode_46GDQuit_9595TXTObjects1Objects = Hashtable.newFrom({"Quit_TXT": gdjs.GameMenuCode.GDQuit_95TXTObjects1});gdjs.GameMenuCode.eventsList0xafd70 = function(runtimeScene, context) {
+gdjs.GameMenuCode.mapOfGDgdjs_46GameMenuCode_46GDPlay_9595TXTObjects1Objects = Hashtable.newFrom({"Play_TXT": gdjs.GameMenuCode.GDPlay_95TXTObjects1});gdjs.GameMenuCode.mapOfGDgdjs_46GameMenuCode_46GDQuit_9595TXTObjects1Objects = Hashtable.newFrom({"Quit_TXT": gdjs.GameMenuCode.GDQuit_95TXTObjects1});gdjs.GameMenuCode.eventsList0xaff48 = function(runtimeScene) {
 
 {
 
@@ -65,11 +65,11 @@ if (gdjs.GameMenuCode.condition1IsTrue_0.val) {
 }
 
 
-}; //End of gdjs.GameMenuCode.eventsList0xafd70
+}; //End of gdjs.GameMenuCode.eventsList0xaff48
 
 
-gdjs.GameMenuCode.func = function(runtimeScene, context) {
-context.startNewFrame();
+gdjs.GameMenuCode.func = function(runtimeScene) {
+runtimeScene.getOnceTriggers().startNewFrame();
 gdjs.GameMenuCode.GDQuit_95TXTObjects1.length = 0;
 gdjs.GameMenuCode.GDQuit_95TXTObjects2.length = 0;
 gdjs.GameMenuCode.GDPlay_95TXTObjects1.length = 0;
@@ -77,6 +77,7 @@ gdjs.GameMenuCode.GDPlay_95TXTObjects2.length = 0;
 gdjs.GameMenuCode.GDBackgroundObjects1.length = 0;
 gdjs.GameMenuCode.GDBackgroundObjects2.length = 0;
 
-gdjs.GameMenuCode.eventsList0xafd70(runtimeScene, context);return;
+gdjs.GameMenuCode.eventsList0xaff48(runtimeScene);
+return;
 }
-gdjs['GameMenuCode']= gdjs.GameMenuCode;
+gdjs['GameMenuCode'] = gdjs.GameMenuCode;
