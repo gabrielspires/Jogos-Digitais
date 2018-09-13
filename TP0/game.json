@@ -1115,6 +1115,24 @@
         "kind": "audio",
         "name": "MenuMusic.mp3",
         "userAdded": true
+      },
+      {
+        "file": "snd/survival_mode.ogg",
+        "kind": "audio",
+        "name": "survival_mode.ogg",
+        "userAdded": true
+      },
+      {
+        "file": "snd/prepare_yourself.ogg",
+        "kind": "audio",
+        "name": "prepare_yourself.ogg",
+        "userAdded": true
+      },
+      {
+        "file": "snd/you_win.ogg",
+        "kind": "audio",
+        "name": "you_win.ogg",
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -4138,7 +4156,22 @@
                 "Mattashi_Lost_in_Pixels.mp3",
                 "1",
                 "yes",
-                "20",
+                "10",
+                ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "PlayMusicCanal"
+              },
+              "parameters": [
+                "",
+                "survival_mode.ogg",
+                "2",
+                "no",
+                "10",
                 ""
               ],
               "subInstructions": []
@@ -5183,6 +5216,88 @@
               "subInstructions": []
             }
           ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "CHEAT",
+          "comment2": ""
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "KeyPressed"
+              },
+              "parameters": [
+                "",
+                "h"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarObjet"
+              },
+              "parameters": [
+                "Boss",
+                "health",
+                "=",
+                "0"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "KeyPressed"
+              },
+              "parameters": [
+                "",
+                "r"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "TimeCount",
+                "=",
+                "55"
+              ],
+              "subInstructions": []
+            }
+          ],
           "events": [
             {
               "disabled": false,
@@ -5267,7 +5382,7 @@
                 "",
                 "shot.wav",
                 "",
-                "5",
+                "1",
                 "1"
               ],
               "subInstructions": []
@@ -5456,7 +5571,7 @@
                 "",
                 "explosion.mp3",
                 "",
-                "10",
+                "2",
                 "1.2"
               ],
               "subInstructions": []
@@ -5960,7 +6075,7 @@
               ]
             },
             {
-              "disabled": true,
+              "disabled": false,
               "folded": false,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
@@ -6243,12 +6358,12 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "Timer"
+                    "value": "VarScene"
                   },
                   "parameters": [
-                    "",
-                    "55",
-                    "BossTimer"
+                    "TimeCount",
+                    "=",
+                    "55"
                   ],
                   "subInstructions": []
                 }
@@ -6295,6 +6410,21 @@
                         "\"\""
                       ],
                       "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "PlayMusicCanal"
+                      },
+                      "parameters": [
+                        "",
+                        "prepare_yourself.ogg",
+                        "2",
+                        "no",
+                        "30",
+                        ""
+                      ],
+                      "subInstructions": []
                     }
                   ],
                   "events": []
@@ -6309,12 +6439,12 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "Timer"
+                    "value": "VarScene"
                   },
                   "parameters": [
-                    "",
-                    "60",
-                    "BossTimer"
+                    "TimeCount",
+                    ">=",
+                    "60"
                   ],
                   "subInstructions": []
                 }
@@ -6421,7 +6551,7 @@
                         "BossTheme.mp3",
                         "1",
                         "yes",
-                        "30",
+                        "10",
                         ""
                       ],
                       "subInstructions": []
@@ -6864,7 +6994,7 @@
                         "",
                         "boss_explosion.mp3",
                         "",
-                        "10",
+                        "5",
                         "0"
                       ],
                       "subInstructions": []
@@ -6877,7 +7007,7 @@
                       "parameters": [
                         "GameOver_TXT",
                         "=",
-                        "\" YOU DID IT!\nFinal score: \"+ LargeNumberToString(Variable(TimeCount))"
+                        "\"  YOU WIN!!\nFinal score: \"+ LargeNumberToString(Variable(TimeCount)+Variable(score)*10)"
                       ],
                       "subInstructions": []
                     },
@@ -6889,7 +7019,7 @@
                       "parameters": [
                         "GameOverShadow_TXT",
                         "=",
-                        "\" YOU DID IT!\nFinal score: \"+ LargeNumberToString(Variable(TimeCount))"
+                        "\"  YOU WIN!!\nFinal score: \"+ LargeNumberToString(Variable(TimeCount)+Variable(score)*10)"
                       ],
                       "subInstructions": []
                     },
@@ -6967,6 +7097,32 @@
                       "parameters": [
                         "",
                         "\"GameTimer\""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "StopMusicCanal"
+                      },
+                      "parameters": [
+                        "",
+                        "1"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "PlayMusicCanal"
+                      },
+                      "parameters": [
+                        "",
+                        "you_win.ogg",
+                        "2",
+                        "no",
+                        "20",
+                        ""
                       ],
                       "subInstructions": []
                     }
